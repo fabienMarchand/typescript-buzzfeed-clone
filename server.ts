@@ -22,7 +22,7 @@ app.get("/quiz-item", async (req: Request, res: Response) => {
       const quizItem: QuizData = await response.data.data[
         "f09d123b-a423-44c3-a310-bd8ca6c6518c"
       ];
-      res.setHeader("Access-Control-Allow-Origin", "http://llocalhost:3000");
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.send(quizItem);
     }
   } catch (error) {
