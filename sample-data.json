@@ -1,6 +1,6 @@
 {
   "quizID": "3456U786JHYTGR",
-  "title": "What chees are you?",
+  "title": "What cheese are you?",
   "subtitle": "this quiz ins't cheesy or anything like that...",
   "content": [
     {
@@ -38,13 +38,13 @@
       "text": "Pick a home",
       "questions": [
         {
-          "test": "traditional",
+          "text": "traditional",
           "image": "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
           "alt": "traditional home",
           "credit": "Rowan Heuvel"
         },
         {
-          "test": "modern",
+          "tet": "modern",
           "image": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG9tZSUyMG1vZGVybnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
           "alt": "modern home",
           "credit": "Michel"
@@ -56,25 +56,25 @@
         "text": "Pick some food",
         "questions": [
           {
-            "test": "cheese",
+            "text": "cheese",
             "image": "https://images.unsplash.com/photo-1552767059-ce182ead6c1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hlZXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
             "alt": "cheese",
             "credit": "Jean"
           },
           {
-            "test": "pizza",
+            "text": "pizza",
             "image": "https://images.unsplash.com/photo-1601924582970-9238bcb495d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBpenphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
             "alt": "pizza",
             "credit": "Alberto"
           },
           {
-            "test": "Noodles",
+            "text": "Noodles",
             "image": "https://images.unsplash.com/photo-1617622141573-2e00d8818f3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2hpbmVzZSUyMG5vb2RsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
             "alt": "noodles",
             "credit": "Yuha"
           },
           {
-            "test": "Fajitas",
+            "text": "Fajitas",
             "image": "https://images.unsplash.com/photo-1649532243592-7d4323d0f57d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmFqaXRhc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
             "alt": "fajitas",
             "credit": "Pablo"
