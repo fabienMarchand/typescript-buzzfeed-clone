@@ -71,10 +71,24 @@ p {
 .question-block img {
   max-height: 100%;
   max-width: 100%;
-  object-fit: cover ;
+  object-fit: cover;
 }
 
 .question-block a {
   color: rgb(213, 213, 213);
   text-decoration: none;
+}
+
+.answer-block {
+  width: 600px;
+  background-color: rgb(255, 61, 158);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+}
+
+.answer-block img {
+  width: 90%;
 }

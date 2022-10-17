@@ -61,7 +61,12 @@ const App = () => {
           setUnanswerQuestionIds={setUnanswerQuestionIds}
         />
       ))}
-      {showAnswer && <AnswerBlock />}
+      {showAnswer && (
+        <AnswerBlock
+          answerOptions={quiz?.answers}
+          choosenAnswers={choosenAnswerItems}
+        />
+      )}
     </div>
   );
 };
