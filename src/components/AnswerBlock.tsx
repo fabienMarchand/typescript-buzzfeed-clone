@@ -3,7 +3,7 @@ import React from 'react';
 
 const QuestionsBlock = () => {
   return (
-    <div >
+    <div className='answer-block'>
      
     </div>
   );
