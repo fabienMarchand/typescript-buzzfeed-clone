@@ -1,13 +1,16 @@
-import { useEffect, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import { Answer } from "../../interfaces";
 
-const QuestionsBlock = ({
-  answerOptions,
-  choosenAnswers,
-}: {
-  answerOptions: Answer[] | undefined;
-  choosenAnswers: string[];
-}) => {
+const QuestionsBlock = (
+  {
+    answerOptions,
+    choosenAnswers,
+  }: {
+    answerOptions: Answer[] | undefined;
+    choosenAnswers: string[];
+  },
+  ref: HTMLDivElement | any
+) => {
   const [result, setResult] = useState<Answer | null>();
 
   useEffect(() => {
@@ -22,11 +25,12 @@ const QuestionsBlock = ({
     });
   }, [choosenAnswers]);
 
-  return <div id="answer-block"className="answer-block">
-    <h2>{result?.text}</h2>
-    <img src={result?.image} alt={result?.alt} />
-    
-  </div>;
+  return (
+    <div ref={ref} className="answer-block">
+      <h2>{result?.text}</h2>
+      <img src={result?.image} alt={result?.alt} />
+    </div>
+  );
 };
 
-export default QuestionsBlock;
+export default forwardRef(QuestionsBlock);
