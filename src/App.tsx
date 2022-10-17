@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Title from "./components/Title";
 import { QuizData, Content } from "../interfaces";
 import QuestionsBlock from "./components/QuestionsBlock";
+import AnswerBlock from "./components/AnswerBlock";
 
 const App = () => {
   const [quiz, setQuiz] = useState<QuizData | null>();
@@ -10,6 +11,7 @@ const App = () => {
   const [unanswerQuestionIds, setUnanswerQuestionIds] = useState<
     number[] | undefined
   >([]);
+  const [showAnswer, setShowAnswer] = useState<boolean>(false);
 
   const fetchData = async () => {
     try {
@@ -32,15 +34,17 @@ const App = () => {
 
   useEffect(() => {
     if (unanswerQuestionIds) {
-      if(unanswerQuestionIds.length <=0 && choosenAnswerItems.length >= 1){
-       const answerBlock=  document.getElementById("answer-block")
+      if (unanswerQuestionIds.length <= 0 && choosenAnswerItems.length >= 1) {
+        setShowAnswer(true);
+        const answerBlock = document.getElementById("answer-block");
+        answerBlock?.scrollIntoView({ behavior: "smooth" });
       }
 
       const highestId = Math.min(...unanswerQuestionIds);
       const highestElement = document.getElementById(String(highestId));
       highestElement?.scrollIntoView({ behavior: "smooth" });
     }
-  }, [unanswerQuestionIds]);
+  }, [unanswerQuestionIds, choosenAnswerItems]);
 
   console.log(choosenAnswerItems);
 
@@ -57,6 +61,7 @@ const App = () => {
           setUnanswerQuestionIds={setUnanswerQuestionIds}
         />
       ))}
+      {showAnswer && <AnswerBlock />}
     </div>
   );
 };
